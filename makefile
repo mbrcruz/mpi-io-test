@@ -13,7 +13,8 @@ all: prog
 
 prog: ${OBJECTS}
 	${CC} ${LDFLAGS} ${OBJECTS} -o $@
-
+	scp   prog admin@nfs05.psr-inc.com:/home/admin/mpi-io-test/
+	
 .c.o:
 	${CC} ${CFLAGS} $<
 clean:
