@@ -3,7 +3,7 @@
 #include <mpi.h>
 #include <string.h>
 
-#define TOTAL_FILE_SIZE 100L * 1024L * 1024L * 1024L  // 100GB
+#define TOTAL_FILE_SIZE 10L * 1024L * 1024L * 1024L  // 100GB
 #define BLOCK_SIZE 1024L * 1024L * 1024L       // Tamanho do bloco por processo (1GB máximo por processo)
 #define FILE_NAME "output_file.dat"
 
