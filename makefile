@@ -12,9 +12,9 @@ all: prog
 
 
 prog: ${OBJECTS}
-        ${CC} ${LDFLAGS} ${OBJECTS} -o $@
+	${CC} ${LDFLAGS} ${OBJECTS} -o $@
 
 .c.o:
-        ${CC} ${CFLAGS} $<
+	${CC} ${CFLAGS} $<
 clean:
-        @rm -f *.o pro
+	@rm -f *.o pro
