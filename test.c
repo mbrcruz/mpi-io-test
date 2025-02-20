@@ -35,8 +35,8 @@ int main(int argc, char *argv[]) {
     offset = rank * total_blocks_per_process;
 
     // Escrever no arquivo de forma paralela
-    MPI_File_write_at(fh, buf, total_blocks_per_process, MPI_CHAR, &status);
-    
+    MPI_File_write_at(fh, offset, buf, total_blocks_per_process, MPI_CHAR, &status);
+
     // Fechar o arquivo
     MPI_File_close(&fh);
 
