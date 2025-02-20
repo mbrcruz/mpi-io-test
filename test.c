@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
 
     // Calcular o número total de blocos a serem escritos no arquivo
     total_blocks_per_process = TOTAL_FILE_SIZE / size;
+    printf("Rank %d: Total blocks per process: %ld\n", rank, total_blocks_per_process);
 
     // Alocar o buffer de dados a ser escrito
     buf = (char*)malloc(total_blocks_per_process * sizeof(char));
